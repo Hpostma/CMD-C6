@@ -46,7 +46,6 @@ export default function TestChatBot() {
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
   // Setup paste event listeners
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const textarea = textareaRef.current
     if (textarea) {
@@ -55,6 +54,7 @@ export default function TestChatBot() {
         textarea.removeEventListener('paste', handlePaste)
       }
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   // Voice recognition setup
@@ -779,8 +779,9 @@ export default function TestChatBot() {
                   
                   {file.type === 'image' && file.preview && (
                     <div className="mb-2">
-                      <img 
-                        src={file.preview} 
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={file.preview}
                         alt={file.name}
                         className="w-full h-20 object-cover rounded"
                       />
@@ -1129,7 +1130,7 @@ export default function TestChatBot() {
                     <div className="flex flex-wrap gap-1">
                       {groundingData.searchQueries.map((query: string, index: number) => (
                         <span key={index} className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
-                          "{query}"
+                          &quot;{query}&quot;
                         </span>
                       ))}
                     </div>
