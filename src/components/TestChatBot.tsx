@@ -54,6 +54,7 @@ export default function TestChatBot() {
         textarea.removeEventListener('paste', handlePaste)
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   // Voice recognition setup
