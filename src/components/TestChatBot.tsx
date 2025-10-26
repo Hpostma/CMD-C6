@@ -46,6 +46,7 @@ export default function TestChatBot() {
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
   // Setup paste event listeners
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const textarea = textareaRef.current
     if (textarea) {
@@ -54,7 +55,6 @@ export default function TestChatBot() {
         textarea.removeEventListener('paste', handlePaste)
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   // Voice recognition setup
