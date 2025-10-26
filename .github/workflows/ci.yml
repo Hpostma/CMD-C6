@@ -29,6 +29,7 @@ jobs:
 
     - name: Run linter
       run: npm run lint
+      continue-on-error: false
 
     - name: Build project
       run: npm run build
@@ -36,6 +37,8 @@ jobs:
         # Voeg hier je environment variabelen toe indien nodig
         # GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         NODE_ENV: production
+        # Skip Sharp installation for faster builds (Next.js will use fallback)
+        NEXT_SHARP_PATH: /tmp/sharp
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
