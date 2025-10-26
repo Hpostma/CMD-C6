@@ -90,7 +90,7 @@ export default function Home() {
                   Stap 3: Maak een .env.local bestand
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Als het template is geladen ga je naar het <strong>tabblad "Code"</strong>. Bij de files doe je <strong>rechtermuisknop</strong> en klik je op <strong>"New File"</strong>. Die noem je <code className="bg-gray-100 px-2 py-1 rounded text-sm">.env.local</code>. Daar binnen zet je het volgende:
+                  Als het template is geladen ga je naar het <strong>tabblad &quot;Code&quot;</strong>. Bij de files doe je <strong>rechtermuisknop</strong> en klik je op <strong>&quot;New File&quot;</strong>. Die noem je <code className="bg-gray-100 px-2 py-1 rounded text-sm">.env.local</code>. Daar binnen zet je het volgende:
                 </p>
                 <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
                   <div className="flex items-center justify-end mb-2">
@@ -103,7 +103,7 @@ export default function Home() {
                   <code>GEMINI_API_KEY=your_actual_api_key_here</code>
                 </div>
                 <p className="text-orange-600 text-sm mt-2 font-medium">
-                  ⚠️ Vervang "your_actual_api_key_here" met je echte API key! (zie stap 3)
+                  ⚠️ Vervang &quot;your_actual_api_key_here&quot; met je echte API key! (zie stap 3)
                 </p>
               </div>
 
@@ -181,7 +181,7 @@ export default function Home() {
                 </p>
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4">
                   <p className="text-green-800 text-sm">
-                    🌟 <strong>Tijd om te delen!</strong> Laat je collega's, studenten of vrienden zien wat je hebt gebouwd. Wie weet inspireer je anderen om ook te gaan experimenteren met AI in het onderwijs! 🚀
+                    🌟 <strong>Tijd om te delen!</strong> Laat je collega&apos;s, studenten of vrienden zien wat je hebt gebouwd. Wie weet inspireer je anderen om ook te gaan experimenteren met AI in het onderwijs! 🚀
                   </p>
                 </div>
               </div>
