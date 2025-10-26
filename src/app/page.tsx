@@ -80,7 +80,7 @@ export default function Home() {
                   Stap 2: Import in Bolt.new
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Open <a href="https://bolt.new" target="_blank" className="text-purple-600 hover:text-purple-800 underline">Bolt.new</a> en login. Selecteer '<strong>import from github</strong>' en login op GitHub. Kies dan de '<strong>repository</strong>' die je net hebt geforkt.
+                  Open <a href="https://bolt.new" target="_blank" className="text-purple-600 hover:text-purple-800 underline">Bolt.new</a> en login. Selecteer &apos;<strong>import from github</strong>&apos; en login op GitHub. Kies dan de &apos;<strong>repository</strong>&apos; die je net hebt geforkt.
                 </p>
               </div>
 
@@ -157,16 +157,16 @@ export default function Home() {
                   Stap 7: Deploy met Vercel
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Ga naar <a href="https://vercel.com" target="_blank" className="text-purple-600 hover:text-purple-800 underline">Vercel.com</a>, login en koppel je Github. Klik op <strong>'Add New'</strong> en importeer de Github die je net hebt gemaakt binnen Bolt. <strong className="text-red-600">KLIK NOG NIET OP DEPLOY</strong>. Eerst moet je de <strong>'Environment Variable'</strong> instellen:
+                  Ga naar <a href="https://vercel.com" target="_blank" className="text-purple-600 hover:text-purple-800 underline">Vercel.com</a>, login en koppel je Github. Klik op <strong>&apos;Add New&apos;</strong> en importeer de Github die je net hebt gemaakt binnen Bolt. <strong className="text-red-600">KLIK NOG NIET OP DEPLOY</strong>. Eerst moet je de <strong>&apos;Environment Variable&apos;</strong> instellen:
                 </p>
                 <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-3">
                   <p className="text-yellow-800 text-sm mb-2">
                     ⚙️ <strong>Environment Variables instellen:</strong>
                   </p>
                   <ul className="text-yellow-700 text-sm space-y-1">
-                    <li>• Bij <strong>'Key'</strong> vul je <code className="bg-yellow-100 px-1 rounded">GEMINI_API_KEY</code> in</li>
-                    <li>• Bij <strong>'Value'</strong> vul je je echte API key in</li>
-                    <li>• Klik dan pas op <strong>'Deploy'</strong></li>
+                    <li>• Bij <strong>&apos;Key&apos;</strong> vul je <code className="bg-yellow-100 px-1 rounded">GEMINI_API_KEY</code> in</li>
+                    <li>• Bij <strong>&apos;Value&apos;</strong> vul je je echte API key in</li>
+                    <li>• Klik dan pas op <strong>&apos;Deploy&apos;</strong></li>
                   </ul>
                 </div>
               </div>
