@@ -59,7 +59,7 @@ export default function Home() {
                   Ga naar <a href="https://github.com" target="_blank" className="text-purple-600 hover:text-purple-800 underline">github.com</a> en login in. Ga dan naar deze pagina: <a href="https://github.com/TomNaberink/apitemplateTom" target="_blank" className="text-purple-600 hover:text-purple-800 underline">https://github.com/TomNaberink/apitemplateTom</a>
                 </p>
                 <p className="text-gray-600 mb-3">
-                  Klik rechtsbovenin op '<strong>Use this template</strong>', geef het een gepaste naam voor je project en klik op '<strong>create fork</strong>'.
+                  Klik rechtsbovenin op &apos;<strong>Use this template</strong>&apos;, geef het een gepaste naam voor je project en klik op &apos;<strong>create fork</strong>&apos;.
                 </p>
                 <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
                   <div className="flex items-center justify-between mb-2">
@@ -80,7 +80,7 @@ export default function Home() {
                   Stap 2: Import in Bolt.new
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Open <a href="https://bolt.new" target="_blank" className="text-purple-600 hover:text-purple-800 underline">Bolt.new</a> en login. Selecteer '<strong>import from github</strong>' en login op GitHub. Kies dan de '<strong>repository</strong>' die je net hebt geforkt.
+                  Open <a href="https://bolt.new" target="_blank" className="text-purple-600 hover:text-purple-800 underline">Bolt.new</a> en login. Selecteer &apos;<strong>import from github</strong>&apos; en login op GitHub. Kies dan de &apos;<strong>repository</strong>&apos; die je net hebt geforkt.
                 </p>
               </div>
 
@@ -90,7 +90,7 @@ export default function Home() {
                   Stap 3: Maak een .env.local bestand
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Als het template is geladen ga je naar het <strong>tabblad "Code"</strong>. Bij de files doe je <strong>rechtermuisknop</strong> en klik je op <strong>"New File"</strong>. Die noem je <code className="bg-gray-100 px-2 py-1 rounded text-sm">.env.local</code>. Daar binnen zet je het volgende:
+                  Als het template is geladen ga je naar het <strong>tabblad &quot;Code&quot;</strong>. Bij de files doe je <strong>rechtermuisknop</strong> en klik je op <strong>&quot;New File&quot;</strong>. Die noem je <code className="bg-gray-100 px-2 py-1 rounded text-sm">.env.local</code>. Daar binnen zet je het volgende:
                 </p>
                 <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
                   <div className="flex items-center justify-end mb-2">
@@ -103,7 +103,7 @@ export default function Home() {
                   <code>GEMINI_API_KEY=your_actual_api_key_here</code>
                 </div>
                 <p className="text-orange-600 text-sm mt-2 font-medium">
-                  ⚠️ Vervang "your_actual_api_key_here" met je echte API key! (zie stap 3)
+                  ⚠️ Vervang &quot;your_actual_api_key_here&quot; met je echte API key! (zie stap 3)
                 </p>
               </div>
 
@@ -157,16 +157,16 @@ export default function Home() {
                   Stap 7: Deploy met Vercel
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Ga naar <a href="https://vercel.com" target="_blank" className="text-purple-600 hover:text-purple-800 underline">Vercel.com</a>, login en koppel je Github. Klik op <strong>'Add New'</strong> en importeer de Github die je net hebt gemaakt binnen Bolt. <strong className="text-red-600">KLIK NOG NIET OP DEPLOY</strong>. Eerst moet je de <strong>'Environment Variable'</strong> instellen:
+                  Ga naar <a href="https://vercel.com" target="_blank" className="text-purple-600 hover:text-purple-800 underline">Vercel.com</a>, login en koppel je Github. Klik op <strong>&apos;Add New&apos;</strong> en importeer de Github die je net hebt gemaakt binnen Bolt. <strong className="text-red-600">KLIK NOG NIET OP DEPLOY</strong>. Eerst moet je de <strong>&apos;Environment Variable&apos;</strong> instellen:
                 </p>
                 <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-3">
                   <p className="text-yellow-800 text-sm mb-2">
                     ⚙️ <strong>Environment Variables instellen:</strong>
                   </p>
                   <ul className="text-yellow-700 text-sm space-y-1">
-                    <li>• Bij <strong>'Key'</strong> vul je <code className="bg-yellow-100 px-1 rounded">GEMINI_API_KEY</code> in</li>
-                    <li>• Bij <strong>'Value'</strong> vul je je echte API key in</li>
-                    <li>• Klik dan pas op <strong>'Deploy'</strong></li>
+                    <li>• Bij <strong>&apos;Key&apos;</strong> vul je <code className="bg-yellow-100 px-1 rounded">GEMINI_API_KEY</code> in</li>
+                    <li>• Bij <strong>&apos;Value&apos;</strong> vul je je echte API key in</li>
+                    <li>• Klik dan pas op <strong>&apos;Deploy&apos;</strong></li>
                   </ul>
                 </div>
               </div>
@@ -181,7 +181,7 @@ export default function Home() {
                 </p>
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4">
                   <p className="text-green-800 text-sm">
-                    🌟 <strong>Tijd om te delen!</strong> Laat je collega's, studenten of vrienden zien wat je hebt gebouwd. Wie weet inspireer je anderen om ook te gaan experimenteren met AI in het onderwijs! 🚀
+                    🌟 <strong>Tijd om te delen!</strong> Laat je collega&apos;s, studenten of vrienden zien wat je hebt gebouwd. Wie weet inspireer je anderen om ook te gaan experimenteren met AI in het onderwijs! 🚀
                   </p>
                 </div>
               </div>

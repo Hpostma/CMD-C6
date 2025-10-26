@@ -198,7 +198,7 @@ export default function VoiceInput({ onTranscript, isDisabled = false }: VoiceIn
             <div className="w-1 h-1 bg-red-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
             <div className="w-1 h-1 bg-red-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
           </div>
-          <div className="italic">"{transcript}"</div>
+          <div className="italic">&quot;{transcript}&quot;</div>
         </div>
       )}
 

@@ -1,0 +1,49 @@
+name: CI - Build en Test
+
+on:
+  push:
+    branches: [ main, master, claude/** ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run linter
+      run: npm run lint
+      continue-on-error: false
+
+    - name: Build project
+      run: npm run build
+      env:
+        # Voeg hier je environment variabelen toe indien nodig
+        # GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        NODE_ENV: production
+        # Skip Sharp installation for faster builds (Next.js will use fallback)
+        NEXT_SHARP_PATH: /tmp/sharp
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      if: success()
+      with:
+        name: build-output
+        path: .next/
+        retention-days: 7
